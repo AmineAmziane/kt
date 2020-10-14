@@ -1,10 +1,9 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import arrow from './../assets/corn.png'
-import uber from './../assets2/uber-2.svg'
-import Typography from '@material-ui/core/Typography';
+import arrow from './../assets/Groupe-2512.svg'
+import uber from './../assets/uber-2.svg'
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 //import './index.scss'
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,11 +40,13 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 const SecA = () => {
+    const matches2 = useMediaQuery('(min-width:1280px)');
     const tab=[1,1,1,1,1,1]
     const classes = useStyles();
   return (
     <div className={classes.root}>
-    <Grid  justify='flex-start' style={{justifyContent:'flex-start'}} className={classes.div}>
+    {matches2?(<>
+      <Grid  justify='flex-start' style={{justifyContent:'flex-start'}} className={classes.div}>
       <h1 className={classes.h1}>Some of my work</h1>
       <img src={arrow} alt=""/>
     </Grid>
@@ -57,7 +58,8 @@ const SecA = () => {
             </div>
           ))
         }
-        </Grid>
+        </Grid></>):''
+      }
     </div>
   )
 }

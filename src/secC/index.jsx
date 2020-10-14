@@ -2,9 +2,8 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
-import arrow from './../assets/corn.png'
-import uber from './../assets2/uber-2.svg'
-import Typography from '@material-ui/core/Typography';
+import arrow from './../assets/Groupe-2512.svg'
+import uber from './../assets/uber-2.svg'
 //import './index.scss'
 
 const useStyles = makeStyles((theme) => ({
@@ -12,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     backdropFilter: 'blur(30px)',
     backgroundColor: '#eef4fe',
-    margin:'30px 0'
+    margin:'30px 0 0 0'
   },
   paper: {
     width: '264px',
@@ -28,7 +27,8 @@ const useStyles = makeStyles((theme) => ({
   },
   dpub:{
     display:'flex',
-    alignItems:'center'
+    alignItems:'center',
+    flexWrap:'wrap'
   },
   pub:{
     fontFamily: 'Work Sans',
@@ -45,7 +45,10 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: 1.17,
     textAlign: 'left',
     color: '#000',
-    margin:'15px 0'
+    margin:'15px 0',
+    '@media (max-width: 800px)' : {
+        fontSize: '24px',
+    }  
   },
   btn:{
     width: '153.5px',
@@ -57,6 +60,9 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 900,
     lineHeight: 1.19,
     color: '#5594fe',
+    '@media (max-width: 800px)' : {
+        fontSize: '14px',
+    }  
   },
   art:{
     fontFamily: 'Kalam',
@@ -80,7 +86,10 @@ const useStyles = makeStyles((theme) => ({
   },
   grd:{
       padding:'60px',
-      alignItems:'center'
+      alignItems:'center',
+    '@media (max-width: 800px)' : {
+        padding:'30px'
+    }  
   }
 }));
 const SecC = () => {

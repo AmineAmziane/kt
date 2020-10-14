@@ -4,6 +4,11 @@
   max-width: 1920px;
   margin: 0 auto;
 }
+@media (max-width: 600px) {
+  .App {
+    width:95%;
+  }
+}
 body {
     overflow-x: hidden;
 }

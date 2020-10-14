@@ -1,16 +1,12 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import arrow from './../assets/corn.png'
-import uber from './../assets2/uber-2.svg'
-import Typography from '@material-ui/core/Typography';
-//import './index.scss'
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    margin:'80px 0'
+    margin:'80px 0 0 0'
   },
   paper: {
     padding: theme.spacing(2),
@@ -18,7 +14,10 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.secondary,
   },
   grd:{
-    textAlign:'left'
+    textAlign:'left',
+    '@media (max-width: 800px)' : {
+        backgroundColor:'#eef4fe'
+    }  
   },
   hh:{
     fontFamily: 'Work Sans',
@@ -43,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'left',
     color: '#000000',
     margin:'0 0 10px 0',
-    width:'90%'
+    width:'95%'
   },
   ty:{
     fontFamily: 'Work Sans',

@@ -1,9 +1,8 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Img from './../assets2/hunter-matthews-KN0Wpxr7q1o-unsplash@2x.png'
-import Img2 from './../assets2/mobile_image@2x.png'
+import Img from './../assets/hunter-matthews-KN0Wpxr7q1o-unsplash@2x.png'
+import Img2 from './../assets/mobile_image@2x.png'
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 //import './index.scss'
@@ -69,7 +68,6 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 const Header = () => {
-    const matches = useMediaQuery('(min-width:800px)');
     const matches2 = useMediaQuery('(min-width:1280px)');
     const classes = useStyles();
   return (
@@ -77,7 +75,7 @@ const Header = () => {
       <Grid container spacing={1} alignItems='center' className={classes.grid} justify='space-around' wrap='wrap-reverse' direction={matches2?'':'column-reverse'}>
         <Grid item sm={12} lg={6} style={{textAlign:'left'}}>
           <h1 className={classes.nh}>
-            Hi, I’m Kiara. 👋
+            Hi, I’m Kiara.<span  role="img" aria-label="donut"> 👋</span>
           </h1>
           <p className={classes.lorem}>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.

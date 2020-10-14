@@ -1,14 +1,10 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import arrow from './../assets/corn.png'
-import uber from './../assets2/uber-2.svg'
-import instagram from './../assets2/iconmonstr-instagram.svg'
-import twitter from './../assets2/iconmonstr-twitter.svg'
+import instagram from './../assets/iconmonstr-instagram.svg'
+import twitter from './../assets/iconmonstr-twitter.svg'
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
-import Typography from '@material-ui/core/Typography';
 //import './index.scss'
 
 const useStyles = makeStyles((theme) => ({
